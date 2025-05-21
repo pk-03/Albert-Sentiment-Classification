@@ -1,5 +1,5 @@
 
-# Hindi Sentiment Classification using DeBERTa
+# Hindi Sentiment Classification using Albert
 
 This project fine-tunes the `albert-base-v2` transformer model for sentiment classification on Hindi text. The goal is to classify Hindi reviews into one of three sentiment classes: **positive**, **negative**, or **neutral**.
 
@@ -65,7 +65,9 @@ The script:
 - Evaluates on a held-out test set
 
 ```python
-python train_sentiment_model.py
+python product.py # for product dataset
+
+python movie.py # for movies dataset
 ```
 
 > **Note:** You can customize training parameters such as `batch_size`, `epochs`, and `learning_rate` inside the script.
